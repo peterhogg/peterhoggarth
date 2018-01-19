@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './header.scss';
+import Menu from '../menu/menu.js';
 
 class Header extends React.Component {
     render() {
@@ -16,7 +17,7 @@ class Header extends React.Component {
 							<a aria-label="Send email" href="mailto:me@peterhoggarth.com"><i className="icon fa fa-envelope"></i></a>
 							<a aria-label="My Github" target="_blank" href="https://github.com/peterhogg"><i className="icon fa fa-github-alt" aria-hidden="true"></i></a>
 						</div>
-						<a className="link" href="#projects" data-scroll="">Projects</a>
+						<Menu />
 					</div>
 				<a className="down" href="#about" data-scroll=""><i className="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 				<canvas className="particles-js-canvas-el" width="938" height="922"></canvas></div>

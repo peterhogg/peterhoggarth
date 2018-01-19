@@ -1,7 +1,5 @@
-$main: #153972;
-$sec: #4B5664;
-$purple: #4286f4;
-$cut: 768px;
+@import './vars.scss';
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     margin: 0;
@@ -93,17 +91,6 @@ body {
         margin: 5px 0 10px 0;
         @media only screen and (min-width: $cut) {
             font-size: 40px;
-        }
-    }
-    .link {
-        color: #FFF;
-        display: inline-flex;
-        justify-content: space-between;
-        text-decoration: none;
-        font-size: 15px;
-        margin: 10px;
-        @media only screen and (min-width: $cut) {
-            font-size: 20px;
         }
     }
 }
