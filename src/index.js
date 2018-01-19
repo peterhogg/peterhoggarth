@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Footer from './footer/footer.js';
 import Header from './header/header.js'
-var siteName = "Peter Hoggarth";
   
   ReactDOM.render(
 	<div>
@@ -11,7 +10,7 @@ var siteName = "Peter Hoggarth";
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     	<link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
 		<Header />
-		<Footer siteName={siteName} />
+		<Footer/>
 	</div>,
 	document.getElementById('root')
   );
