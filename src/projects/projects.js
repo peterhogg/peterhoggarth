@@ -19,7 +19,7 @@ let callout = "Check it out";
 //Define how individual projects are to be rendered
 let projects = project_data.map(function(item, index){
 	return (
-	<div className="row user-projects">
+	<div className="row user-projects" key={index}>
 		<div className="six columns images">
 			<img alt={item.name} src={item.img} />
 		</div>
