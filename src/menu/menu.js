@@ -5,13 +5,17 @@ import './menu.scss';
 let menu_items = [
 	{
 	"name" : "Projects",
-	"url"  : "#projects"	
+	"url"  : "/#projects"	
+	},
+	{
+		"name" : "Contact",
+		"url" : "mailto:me@peterhoggarth.com"
 	}
 ];
 
 //Define how individual menu items are to be rendered
 let items = menu_items.map(function(item, index){
-	return <a className="link" key={index} href={"/" + item.url} data-scroll="">{item.name}</a>;
+	return <a className="link" key={index} href={item.url} data-scroll="">{item.name}</a>;
 })
 
 class Menu extends React.Component {

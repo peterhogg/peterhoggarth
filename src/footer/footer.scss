@@ -1,5 +1,11 @@
-.footer{
+@import '../vars.scss';
+
+.footer {
 	a{
 		color: white;
 	}
+    background: $main;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
 }
