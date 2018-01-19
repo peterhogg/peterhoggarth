@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './header.scss';
 import Menu from '../menu/menu.js';
 
