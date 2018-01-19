@@ -1,4 +1,4 @@
-'use strict';
+
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
@@ -216,13 +216,22 @@ module.exports = {
           // When you `import` an asset, you get its filename.
           // This loader doesn't use a "test" so it will catch all modules
           // that fall through the other loaders.
-          {
+		  // Sass Loader
+		  {
+			test: /\.scss$/,
+			loaders : [
+				require.resolve('style-loader'),
+				require.resolve('css-loader'),
+				require.resolve('sass-loader')
+			]
+		  }, 
+		  {
             loader: require.resolve('file-loader'),
             // Exclude `js` files to keep "css" loader working as it injects
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.scss$/],
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },

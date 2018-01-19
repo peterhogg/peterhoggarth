@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Footer from './footer/index.js';
-import Header from './header/index.js'
+import './index.scss';
+import Footer from './footer/footer.js';
+import Header from './header/header.js'
 var siteName = "Peter Hoggarth";
   
   ReactDOM.render(
